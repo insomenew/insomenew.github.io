@@ -68,6 +68,8 @@ kramdown:
     # Use existing pygments syntax highlighting css
     css_class: 'highlight'
 
+google_fonts: "Nanum+Gothic: 400,700"
+
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: :expanded # You might prefer to minify using :compressed
