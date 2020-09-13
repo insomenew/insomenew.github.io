@@ -19,8 +19,8 @@ html {
 
 body {
 	background: $white;
-  font: 15px/1.6 $helvetica;
-  color: $darkGray;
+	font: 15px/1.6 $helvetica;
+	color: $darkGray;
 }
 
 .container {
@@ -244,12 +244,21 @@ nav {
   }
 }
 
+.post-title-display {
+	font-size: 20px;
+	color: $darkGray;
+	font-weight: 400;
+	a {
+		color: inherit;
+	}
+}
+
 //
 // .main
 //
 
 .posts > .post {
-  padding-bottom: 0.5em;
+  padding-bottom: 0.3em;
   border-bottom: 1px solid $lightGray;
 }
 
