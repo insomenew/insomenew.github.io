@@ -307,10 +307,12 @@ footer {
 // 
 
 .post_list {
-  padding: 12px 8px;
+  padding: 0;
+  margin: 0;
   font-size: 16px;
+  list-style-type: none;
 }
 
-.post_list:hover {
-  background-color: #e6e19d;
-}
+// .post_list:hover {
+//   background-color: #e6e19d;
+// }
