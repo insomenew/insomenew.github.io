@@ -8,4 +8,4 @@ permalink: /about/
 
 ### Contact
 
-[daesungkim87.outlook.com](mailto:daesungkim87.outlook.com)
+[daesungkim87(at)outlook.com](mailto:daesungkim87@outlook.com)
