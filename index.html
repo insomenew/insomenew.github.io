@@ -3,8 +3,8 @@ layout: default
 ---
 	
 <article class="post">
-	<h2>Posts</h2>
-	<ul>
+	<div class="fancy-head">Posts</div>
+	<ul class="post_list">
 		{% for post in site.posts %}
 		<li class="post_list">
 			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
