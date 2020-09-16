@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+무엇이든 읽고 쓰는 공간입니다.
 
-### More Information
+### Contact
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[daesungkim87.outlook.com](mailto:daesungkim87.outlook.com)
