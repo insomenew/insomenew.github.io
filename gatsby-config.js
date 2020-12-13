@@ -1,5 +1,4 @@
 module.exports = {
-    pathPrefix: "/blog",
   siteMetadata: {
     title: `In Some New`,
     author: {
@@ -15,27 +14,6 @@ module.exports = {
       options: {
         path: `${__dirname}/content/blog`,
         name: `blog`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/bible`,
-        name: `bible`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/book`,
-        name: `book`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/math`,
-        name: `math`,
       },
     },
     {
