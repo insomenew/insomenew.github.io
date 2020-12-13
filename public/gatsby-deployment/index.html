@@ -10,8 +10,24 @@ This is a summary how to deploy Gatsby pages to Github.
 I followed the instruction at here…"/><link as="script" rel="preload" href="/webpack-runtime-1b63346a1ee67df594d1.js"/><link as="script" rel="preload" href="/styles-755093da0c07f4b49226.js"/><link as="script" rel="preload" href="/framework-e2d419ac45d8ae41957a.js"/><link as="script" rel="preload" href="/app-d2b673e9037db5411c61.js"/><link as="script" rel="preload" href="/commons-2d0ef29398194854fac1.js"/><link as="script" rel="preload" href="/cd7d5f864fc9e15ed8adef086269b0aeff617554-816374dfb232f72c1e0f.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-4ac8380d813f980b770f.js"/><link as="fetch" rel="preload" href="/page-data/gatsby-deployment/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2711067787.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3000541721.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><header class="global-header"><a class="header-link-home" href="/">In Some New</a></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><h1 itemProp="headline">Gatsby Deployment to Github Pages</h1><p>December 13, 2020</p></header><section itemProp="articleBody"><p>Recently, I created a blog and a personal webpage using Gatsby.
 This is a summary how to deploy Gatsby pages to Github.
 I followed the instruction at <a href="https://www.gatsbyjs.com/docs/how-gatsby-works-with-github-pages/">here</a>.</p>
+<h3>Install Gatsby</h3>
+<p>First, install Xcode, npm, node</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell">xcode-select --install
+brew <span class="token function">install</span> node
+<span class="token function">curl</span> -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh <span class="token operator">|</span> <span class="token function">bash</span></code></pre></div>
+<p>Then, install Gatsby CLI</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">npm install -g gatsby-cli</code></pre></div>
+<p>/usr/local/lib/node_modules</p>
+<p>To update the latest version of node.js, I installed <code class="language-text">nvm</code>.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.35.1/install.sh | bash</code></pre></div>
+<p>I checked the latest version by <code class="language-text">nvm ls-remote</code> and update it by <code class="language-text">nvm install [the latest version number]</code>.</p>
 <h3>Install the gh-pages package</h3>
 <div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token function">npm</span> <span class="token function">install</span> gh-pages</code></pre></div>
+<p>During install, I encountered Permission issue. It says “Missing write access to /usr/local/lib/node_modules”. To solve this, I run </p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">sudo chown -R $USER /usr/local/lib/node_modules</code></pre></div>
+<h3>Start Gatsby</h3>
+<p>Start with </p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">gatsby new blog https://github.com/gatsbyjs/gatsby-starter-hello-world</code></pre></div>
 <h3>Configuration</h3>
 <p>If Gatsby blog/webpage will be deployed on username.github.io, then</p>
 <div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"> <span class="token property">"deploy"</span><span class="token operator">:</span> <span class="token string">"gatsby build &amp;&amp; gh-pages -d public"</span></code></pre></div>
